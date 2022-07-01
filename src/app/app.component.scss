@@ -1,0 +1,28 @@
+@import "../scss/mixins";
+@import "../scss/variables";
+
+mat-toolbar {
+    &.mat-toolbar {
+        width: 80%;
+    }
+}
+
+.container {
+    font-size: 12px;
+    @include border-padding-margin(2px, 20px);
+    &.active{
+        color: $green;
+    }
+    &.disabled {
+        color: $gray;
+    }
+    p {
+        font-size: 13px;
+        color: $red;
+        @include border-padding-margin(1px, 10px);
+    }
+    span {
+        color: $green;
+        @extend .container
+    }
+}

@@ -1,0 +1,5 @@
+@mixin border-padding-margin($border, $margin-padding) {
+    border: $border solid gray;
+    margin: $margin-padding;
+    padding: $margin-padding;
+}
